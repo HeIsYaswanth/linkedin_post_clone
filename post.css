@@ -111,6 +111,7 @@ body {
 }
 
 #info {
+  text-decoration: none;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -151,6 +152,13 @@ body {
   font-weight: bolder;
 }
 
+#profilehead #dots:hover {
+  background-color: #e8e8e8;
+  border: #e8e8e8 solid 1px;
+  border-radius: 50%;
+  border-right: 30%;
+}
+
 #content {
   max-width: 480px;
   padding: 12px;
@@ -169,16 +177,20 @@ body {
   max-width: 40px;
   max-height: 40px;
   padding-right: 3px;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
 }
 #likecount {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--paleblack);
   line-height: 16px;
+  padding-top: 1.3px;
+  text-decoration: none;
 }
 
 #comments {
@@ -186,11 +198,13 @@ body {
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--paleblack);
   line-height: 16px;
   padding-left: 200px;
+  padding-top: 1.3px;
+  text-decoration: none;
 }
 #like {
   display: flex;
@@ -220,19 +234,41 @@ body {
 }
 
 #footer #comment {
-  padding-right: 23px;
-}
-
-#footer #comment {
   padding-right: 25px;
 }
 
 #footer #repost {
   padding-right: 25px;
 }
-
 #footer #send {
   padding-top: 3px;
+}
+
+#footer #like:hover {
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  transition: 0.6sec;
+  border-radius: 4px;
+}
+
+#footer #comment:hover {
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  transition: 0.6sec;
+  border-radius: 4px;
+}
+
+#footer #repost:hover {
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  transition: 0.6sec;
+  border-radius: 4px;
+}
+#footer #send:hover {
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  transition: 0.6sec;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 600px) {
@@ -342,17 +378,18 @@ body {
   }
 
   #info {
+    text-decoration: none;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
       Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
       sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--paleblack);
     line-height: 16px;
     margin: 0px;
-    max-width: 100%;
+    max-width: 411px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -400,9 +437,11 @@ body {
   }
 
   #mulicons {
-    max-width: 30px;
-    max-height: 16px;
+    max-width: 40px;
+    max-height: 40px;
     padding-right: 3px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
   }
   #likecount {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
@@ -410,10 +449,11 @@ body {
       Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
       sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: var(--paleblack);
     line-height: 16px;
+    padding-top: 1.3px;
   }
 
   #comments {
@@ -422,11 +462,12 @@ body {
       Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
       sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: var(--paleblack);
     line-height: 16px;
     padding-left: 200px;
+    padding-top: 1.3px;
   }
   #like {
     display: flex;
@@ -453,10 +494,6 @@ body {
     padding-bottom: 8px;
     padding-left: 15px;
     padding-right: 20px;
-  }
-
-  #footer #comment {
-    padding-right: 23px;
   }
 
   #footer #comment {
