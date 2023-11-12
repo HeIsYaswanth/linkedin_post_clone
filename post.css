@@ -1,0 +1,246 @@
+:root {
+  --paleblack: rgba(0, 0, 0, 0.6);
+  --lightblack: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#topimg {
+  max-width: 28px;
+  max-height: 28px;
+  border: solid 1.5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+#tophead {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#topbody {
+  max-width: 480px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 20px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+#topname {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  line-height: 16px;
+}
+
+#total {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 475px;
+  padding: 10px;
+  border: solid 2px #e8e8e8;
+  border-radius: 5px;
+}
+#profile {
+  max-width: 48px;
+  max-height: 48px;
+  border: solid 1.5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+#profilehead {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.01);
+  max-width: 460px;
+}
+#heading {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 363px;
+  max-height: 70px;
+  margin-left: 0.8rem;
+  overflow: hidden;
+}
+
+#info {
+  flex-wrap: row wrap;
+}
+
+#name {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  line-height: 16px;
+}
+
+#pronoun {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paleblack);
+  line-height: 16px;
+}
+
+#info {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paleblack);
+  line-height: 16px;
+  margin: 0px;
+  max-width: 411px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+#days {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paleblack);
+  line-height: 16px;
+  margin: 0px;
+  max-width: 411px;
+  display: flex;
+  align-items: center;
+}
+#globe {
+  max-width: 14px;
+  max-height: 14px;
+  padding-top: 3px;
+}
+#profilehead #dots {
+  padding: 0px 20px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#content {
+  max-width: 480px;
+  padding: 12px;
+  padding-left: 5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 20px;
+}
+
+#mulicons {
+  max-width: 40px;
+  max-height: 40px;
+  padding-right: 3px;
+}
+#likecount {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paleblack);
+  line-height: 16px;
+}
+
+#comments {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paleblack);
+  line-height: 16px;
+  padding-left: 200px;
+}
+#like {
+  display: flex;
+  justify-content: start;
+  max-width: 463px;
+}
+
+.divline {
+  height: 2px;
+  background-color: #e8e8e8;
+  max-width: 450px;
+  margin: 3px 2px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  padding-right: 140px;
+  margin-top: 6px;
+}
+
+#footer #like {
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+#footer #comment {
+  padding-right: 23px;
+}
+
+#footer #comment {
+  padding-right: 25px;
+}
+
+#footer #repost {
+  padding-right: 25px;
+}
+
+#footer #send {
+  padding-top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    padding-top: 10px;
+  }
+}
